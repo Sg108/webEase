@@ -2,7 +2,7 @@ const router=require("express").Router()
 // const { Router } = require("express")
 const User=require("../models/User")
 const bcrypt=require('bcrypt')
-const { createHmac } = require("crypto")
+// const { createHmac } = require("crypto")
 
 router.post("/register",async(req,res)=>{
     try{

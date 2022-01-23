@@ -13,7 +13,8 @@ const PostSchema = new mongoose.Schema(
     },
     photo: {
       type: String,
-      required: false,
+      default:"https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      
     },
     username: {
       type: String,
@@ -23,6 +24,11 @@ const PostSchema = new mongoose.Schema(
       type: Array,
       required: false,
     },
+    github:{
+      type:String,
+      required:true,
+      unique:true
+    }
   },
   { timestamps: true }
 );
